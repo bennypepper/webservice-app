@@ -1,0 +1,34 @@
+# IDEs and editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+.gradle/
+build/
+local.properties
+
+# OS files
+Thumbs.db
+.DS_Store
+desktop.ini
+
+# Python files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Logs and databases
+*.log
+sqlite.db
+
+# PHP upload folders (ignore actual uploaded files, keep folder if wanted)
+php-code/uploads/*
+!php-code/uploads/.gitkeep

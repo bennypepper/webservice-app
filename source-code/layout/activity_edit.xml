@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <!-- App Bar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/colorForest"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:paddingTop="18dp"
+        android:paddingBottom="18dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <TextView
+                android:id="@+id/btnBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="‹"
+                android:textSize="28sp"
+                android:textColor="@color/colorWhite"
+                android:layout_marginEnd="12dp"
+                android:paddingBottom="2dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detail Mahasiswa"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="19sp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="UBAH ATAU HAPUS DATA"
+                    android:textColor="@color/colorGoldSoft"
+                    android:textSize="10sp"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="0.05"
+                    android:layout_marginTop="2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Form Body -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="22dp">
+
+            <!-- ID Strip (avatar + nama + NIM) -->
+            <LinearLayout
+                android:id="@+id/idStrip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_id_strip"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:id="@+id/tvAvatarStrip"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/bg_avatar_dark"
+                    android:gravity="center"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:layout_marginEnd="10dp"
+                    android:text="RA"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/tvNamaStrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="13.5sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/colorInk"
+                        android:text="Rivian Aditya"/>
+                    <TextView
+                        android:id="@+id/tvNIMStrip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="10.5sp"
+                        android:textColor="@color/colorForest"
+                        android:fontFamily="monospace"
+                        android:layout_marginTop="2dp"
+                        android:text="NIM 312210001"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- NIM (read-only) -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NIM (TIDAK BISA DIUBAH)"
+                android:textColor="@color/colorSageLine"
+                android:textSize="10.5sp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.06"
+                android:layout_marginBottom="7dp"/>
+            <EditText
+                android:id="@+id/etNIM"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_field"
+                android:enabled="false"
+                android:alpha="0.55"
+                android:textColor="@color/colorMuted"
+                android:textSize="14sp"
+                android:paddingHorizontal="14dp"
+                android:layout_marginBottom="18dp"/>
+
+            <!-- Nama -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NAMA"
+                android:textColor="@color/colorMuted"
+                android:textSize="10.5sp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.06"
+                android:layout_marginBottom="7dp"/>
+            <EditText
+                android:id="@+id/etNama"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_field_filled"
+                android:inputType="textPersonName"
+                android:textColor="@color/colorInk"
+                android:textSize="14sp"
+                android:paddingHorizontal="14dp"
+                android:layout_marginBottom="18dp"/>
+
+            <!-- Jurusan -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="JURUSAN"
+                android:textColor="@color/colorMuted"
+                android:textSize="10.5sp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.06"
+                android:layout_marginBottom="7dp"/>
+            <EditText
+                android:id="@+id/etJurusan"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/bg_field_filled"
+                android:inputType="text"
+                android:textColor="@color/colorInk"
+                android:textSize="14sp"
+                android:paddingHorizontal="14dp"
+                android:layout_marginBottom="18dp"/>
+
+            <!-- Alamat -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ALAMAT"
+                android:textColor="@color/colorMuted"
+                android:textSize="10.5sp"
+                android:fontFamily="monospace"
+                android:letterSpacing="0.06"
+                android:layout_marginBottom="7dp"/>
+            <EditText
+                android:id="@+id/etAlamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="72dp"
+                android:background="@drawable/bg_field_filled"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:textColor="@color/colorInk"
+                android:textSize="13sp"
+                android:paddingHorizontal="14dp"
+                android:paddingVertical="12dp"
+                android:layout_marginBottom="26dp"/>
+
+            <!-- Divider label: AKSI -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AKSI"
+                    android:textColor="@color/colorMuted"
+                    android:textSize="10sp"
+                    android:fontFamily="monospace"
+                    android:letterSpacing="0.08"
+                    android:layout_marginEnd="10dp"/>
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSageLine"/>
+            </LinearLayout>
+
+            <!-- Update button (full width) -->
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Update"
+                android:background="@drawable/btn_primary"
+                android:textColor="@color/colorWhite"
+                android:textSize="13.5sp"
+                android:textStyle="bold"
+                android:stateListAnimator="@null"
+                android:layout_marginBottom="10dp"/>
+
+            <!-- Hapus + Kembali side by side -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Hapus Data"
+                    android:background="@drawable/btn_danger"
+                    android:textColor="@color/colorRed"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:stateListAnimator="@null"
+                    android:layout_marginEnd="10dp"/>
+
+                <Button
+                    android:id="@+id/btnKembali"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Kembali"
+                    android:background="@drawable/btn_ghost"
+                    android:textColor="@color/colorMuted"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:stateListAnimator="@null"/>
+            </LinearLayout>
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateTint="@color/colorForest"
+                android:layout_marginTop="14dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Brand Palette (Index Card Theme) -->
+    <color name="colorInk">#1A1F1B</color>
+    <color name="colorPaper">#FAF7F1</color>
+    <color name="colorBackground">#EFEAE0</color>
+    <color name="colorForest">#20402C</color>
+    <color name="colorForestDark">#15281C</color>
+    <color name="colorGold">#C99A3D</color>
+    <color name="colorGoldSoft">#E9D9B0</color>
+    <color name="colorSage">#E2E7DC</color>
+    <color name="colorSageLine">#CBD3C1</color>
+    <color name="colorMuted">#6E7569</color>
+    <color name="colorRed">#A4453A</color>
+    <color name="colorRedSoft">#E3C3BD</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!-- Material theme -->
+    <color name="colorPrimary">#20402C</color>
+    <color name="colorPrimaryVariant">#15281C</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#C99A3D</color>
+    <color name="colorOnSecondary">#15281C</color>
+    <color name="colorSurface">#FAF7F1</color>
+    <color name="colorOnSurface">#1A1F1B</color>
+    <color name="colorError">#A4453A</color>
+    <color name="colorOnError">#FFFFFF</color>
+</resources>

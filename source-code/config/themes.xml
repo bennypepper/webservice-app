@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.Uas_webservice" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorForest</item>
+        <item name="colorPrimaryVariant">@color/colorForestDark</item>
+        <item name="colorOnPrimary">@color/colorWhite</item>
+        <item name="colorSecondary">@color/colorGold</item>
+        <item name="colorOnSecondary">@color/colorForestDark</item>
+        <item name="colorSurface">@color/colorPaper</item>
+        <item name="colorOnSurface">@color/colorInk</item>
+        <item name="colorError">@color/colorRed</item>
+        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:windowBackground">@color/colorBackground</item>
+        <item name="android:statusBarColor">@color/colorForestDark</item>
+        <item name="android:navigationBarColor">@color/colorForestDark</item>
+    </style>
+</resources>
