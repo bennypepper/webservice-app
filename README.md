@@ -5,7 +5,7 @@ An Android native mobile application connected to a PHP Web Service to perform C
 
 ---
 
-## 👥 Team Members (Alphabetical Order)
+## 👥 Team Members 
 - Alfond Manuel Joseph
 - Benedict Michael Pepper
 - Ivan Lie Nagasena
