@@ -37,10 +37,18 @@ public class MainActivity extends AppCompatActivity {
         swipeRefresh = findViewById(R.id.swipeRefresh);
         etSearch     = findViewById(R.id.etSearch);
         fabTambah    = findViewById(R.id.fabTambah);
+        android.widget.TextView btnKeluar = findViewById(R.id.btnKeluar);
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         adapter = new MahasiswaAdapter(this, new ArrayList<>());
         recyclerView.setAdapter(adapter);
+
+        // Logout listener
+        btnKeluar.setOnClickListener(v -> {
+            com.example.uas_webservice.network.BotBypassHelper.clearCookie(this);
+            startActivity(new Intent(MainActivity.this, LoginActivity.class));
+            finish();
+        });
 
         // Search box listener
         etSearch.addTextChangedListener(new TextWatcher() {

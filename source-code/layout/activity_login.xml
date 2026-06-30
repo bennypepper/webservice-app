@@ -22,11 +22,6 @@
             android:orientation="horizontal"
             android:gravity="center_vertical"
             android:layout_marginBottom="20dp">
-            <View
-                android:layout_width="18dp"
-                android:layout_height="2dp"
-                android:background="@color/colorGold"
-                android:layout_marginEnd="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -105,7 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="52dp"
             android:text="MASUK"
-            android:background="@color/colorGold"
+            android:backgroundTint="@color/colorGold"
             android:textColor="@color/colorForestDark"
             android:textSize="14sp"
             android:textStyle="bold"
