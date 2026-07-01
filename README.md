@@ -46,7 +46,7 @@ webservice-app/
 ## 🛠️ Environment Requirements
 
 ### 1. Database & Hosting
-- Web Server with PHP 7.4+ and MySQL support (ByetHost/InfinityFree recommended).
+- Web Server with PHP 7.4+ and MySQL support (ByetHost recommended).
 - MySQL database with `data` and `users` tables (can be imported from `database.sql`).
 
 ### 2. Android App
